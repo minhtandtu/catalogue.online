@@ -16,14 +16,6 @@ const navigation = [
     href: "/",
     submenu: [
       {
-        name: "Catalogue Series 6 ",
-        href: "/catalogueS6",
-      },
-      {
-        name: "Catalogue Series 9 ",
-        href: "#",
-      },
-      {
         name: "Tải về (PDF)",
         href: "#",
       },
@@ -96,14 +88,7 @@ const Topmenu = () => {
               </div>
             ))}
           </div>
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a
-              href="#"
-              className="text-sm font-semibold leading-6 text-gray-900"
-            >
-              Log in <span aria-hidden="true">&rarr;</span>
-            </a>
-          </div>
+          <div className="hidden lg:flex lg:flex-1 lg:justify-end"></div>
         </nav>
         <Dialog
           as="div"
@@ -112,15 +97,10 @@ const Topmenu = () => {
           onClose={setMobileMenuOpen}
         >
           <div className="fixed inset-0 z-50" />
-          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-            <div className="flex items-center justify-between">
-              <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Your Company</span>
-                <img
-                  className="h-8 w-auto"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                  alt=""
-                />
+          <Dialog.Panel className="fixed top-0 border border-gray-300 rounded-md shadow-md right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+            <div className="flex items-center justify-between ">
+              <a href="/" className="-m-1.5 p-1.5">
+                <img className="h-8 w-auto" src="/logo4.jpg" alt="" />
               </a>
               <button
                 type="button"
@@ -134,24 +114,43 @@ const Topmenu = () => {
             <div className="mt-6 flow-root">
               <div className="-my-6 divide-y divide-gray-500/10">
                 <div className="space-y-2 py-6">
-                  {navigation.map((item) => (
-                    <a
-                      key={item.name}
-                      href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                    >
-                      {item.name}
-                    </a>
+                  {navigation.map((item, index) => (
+                    <div key={index} className="group">
+                      <div className="flex">
+                        <Link
+                          key={item.name}
+                          href={item.href}
+                          className="text-sm font-semibold leading-6 text-gray-900"
+                        >
+                          {item.name}
+                        </Link>
+                        {navigation[index].submenu && (
+                          <div className="pl-2 pt-1">
+                            <ChevronDownIcon className="w-4 text-gray-400 "></ChevronDownIcon>
+                          </div>
+                        )}
+                      </div>
+                      <div className="transition duration-500">
+                        {item.submenu?.map((itm, idx) => {
+                          return (
+                            <div
+                              key={idx}
+                              className="hover:bg-gray-300/50 p-4 cursor-pointer "
+                            >
+                              <Link
+                                href={itm.href}
+                                className="whitespace-nowrap"
+                              >
+                                {itm.name}
+                              </Link>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </div>
                   ))}
                 </div>
-                <div className="py-6">
-                  <a
-                    href="#"
-                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >
-                    Log in
-                  </a>
-                </div>
+                <div className="py-6"></div>
               </div>
             </div>
           </Dialog.Panel>

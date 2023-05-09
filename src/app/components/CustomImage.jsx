@@ -16,8 +16,8 @@ const CustomImage = ({ imageUrl, index }) => {
         width={5000}
         height={2500}
         className={`${
-          isFull ? " h-full w-full " : " "
-        } cursor-pointer object-cover   `}
+          isFull ? " h-full w-full " : ""
+        } cursor-pointer object-cover `}
         onClick={() => setIsFull(!isFull)}
       ></Image>
     </div>
