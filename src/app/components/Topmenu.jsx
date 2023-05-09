@@ -17,11 +17,11 @@ const navigation = [
     submenu: [
       {
         name: "Tải về (PDF)",
-        href: "#",
+        href: "/Catalogue.pdf",
       },
       {
         name: "Liên hệ nhận Catalogue (bảng giấy)",
-        href: "#",
+        href: "/lienhe",
       },
     ],
   },
@@ -29,7 +29,7 @@ const navigation = [
 
   {
     name: "Liên hệ",
-    href: "#",
+    href: "/lienhe",
   },
 ];
 const Topmenu = () => {
@@ -78,7 +78,11 @@ const Topmenu = () => {
                         key={idx}
                         className="hover:bg-gray-300/50 p-4 cursor-pointer "
                       >
-                        <Link href={itm.href} className="whitespace-nowrap">
+                        <Link
+                          href={itm.href}
+                          download
+                          className="whitespace-nowrap"
+                        >
                           {itm.name}
                         </Link>
                       </div>

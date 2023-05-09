@@ -28,7 +28,7 @@ const Homepage = () => {
             }}
           />
         </div>
-        <div className="mx-auto max-w-5xl ">
+        <div className="mx-auto max-w-7xl ">
           <div className="px-8">
             <div className="text-center flex flex-col justify-center items-center ">
               <Image
@@ -58,7 +58,7 @@ const Homepage = () => {
               </div>
             </div>
           </div>
-          <div className="mx-auto max-w-5xl py-8 sm:py-16 lg:py-24">
+          <div className="mx-auto max-w-7xl py-8 sm:py-16 lg:py-24">
             <div>
               <p className="mt-4 mx-auto text-3xl md:text-5xl text-teal-600 font-semibold px-4">
                 Catalogue MDF Melamine
