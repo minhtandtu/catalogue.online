@@ -139,7 +139,7 @@ const Topmenu = () => {
                           return (
                             <div
                               key={idx}
-                              className="hover:bg-gray-300/50 p-4 cursor-pointer "
+                              className="hover:bg-gray-300/50 p-4 cursor-pointer text-gray-600 "
                             >
                               <Link
                                 href={itm.href}
