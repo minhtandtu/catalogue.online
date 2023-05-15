@@ -135,7 +135,6 @@ const page = () => {
         {/* FORM */}
         <div className="mt-24 md:mt-36 px-4 ">
           <form
-            onSubmit={handleSubmit}
             className="max-w-md"
             method="POST"
             action="https://formspree.io/f/mqkojdeg"
@@ -148,8 +147,6 @@ const page = () => {
                 type="text"
                 id="name"
                 name="name"
-                value={inputValue.name}
-                onChange={handleChange}
                 className="border border-gray-300 p-2 w-full"
               />
             </div>
@@ -161,8 +158,6 @@ const page = () => {
                 type="phonenumber"
                 id="phonenumber"
                 name="phonenumber"
-                value={inputValue.phonenumber}
-                onChange={handleChange}
                 className="border border-gray-300 p-2 w-full"
               />
             </div>
@@ -174,8 +169,6 @@ const page = () => {
                 type="email"
                 id="email"
                 name="email"
-                value={inputValue.email}
-                onChange={handleChange}
                 className="border border-gray-300 p-2 w-full"
               />
             </div>
@@ -187,8 +180,6 @@ const page = () => {
                 type="address"
                 id="address"
                 name="address"
-                value={inputValue.address}
-                onChange={handleChange}
                 className="border border-gray-300 p-2 w-full"
               />
             </div>
@@ -200,8 +191,6 @@ const page = () => {
                 type="message"
                 id="message"
                 name="message"
-                value={inputValue.message}
-                onChange={handleChange}
                 className="border border-gray-300 p-2 w-full"
               />
             </div>
@@ -212,6 +201,17 @@ const page = () => {
               Gửi
             </button>
           </form>
+          {/* <form action="https://formspree.io/f/mqkojdeg" method="POST">
+            <label>
+             
+              <input type="email" name="email" />
+            </label>
+            <label>
+              Your message:
+              <textarea name="message"></textarea>
+            </label>
+            <button type="submit">Send</button>
+          </form> */}
         </div>
       </div>
     </div>
