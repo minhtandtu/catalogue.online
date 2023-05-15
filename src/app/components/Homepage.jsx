@@ -36,7 +36,7 @@ const Homepage = () => {
                 src="/catalo.jpg"
                 width={700}
                 height={250}
-                className=""
+                className="w-auto h-auto"
               ></Image>
               <p className="text-lg leading-8 text-gray-600">
                 Chúng tôi luôn cố gắng cải thiện chất lượng dịch vụ mỗi ngày để
