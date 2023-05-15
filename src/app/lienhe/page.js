@@ -7,6 +7,7 @@ import {
 } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import { useState } from "react";
+
 const page = () => {
   const [inputValue, setInputValue] = useState({
     name: "",
@@ -201,17 +202,6 @@ const page = () => {
               Gửi
             </button>
           </form>
-          {/* <form action="https://formspree.io/f/mqkojdeg" method="POST">
-            <label>
-             
-              <input type="email" name="email" />
-            </label>
-            <label>
-              Your message:
-              <textarea name="message"></textarea>
-            </label>
-            <button type="submit">Send</button>
-          </form> */}
         </div>
       </div>
     </div>

@@ -50,7 +50,7 @@ const Homepage = () => {
                   Tìm hiểu thêm
                 </a>
                 <a
-                  href="#"
+                  href="/lienhe"
                   className="text-sm font-semibold leading-6 text-gray-900"
                 >
                   Liên hệ ngay <span aria-hidden="true">→</span>
