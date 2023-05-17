@@ -140,10 +140,10 @@ const page = () => {
             method="POST"
             action="https://formspree.io/f/mqkojdeg"
           >
-            <div className="mb-4">
-              <label htmlFor="name" className="block mb-2">
+            <div className="mb-4 block">
+              <p htmlFor="name" className="mb-2 text-lg text-gray-700">
                 Tên
-              </label>
+              </p>
               <input
                 type="text"
                 id="name"
@@ -152,9 +152,12 @@ const page = () => {
               />
             </div>
             <div className="mb-4">
-              <label htmlFor="phonenumber" className="block mb-2">
+              <p
+                htmlFor="phonenumber"
+                className="block mb-2 text-lg text-gray-700"
+              >
                 Số điện thoại
-              </label>
+              </p>
               <input
                 type="phonenumber"
                 id="phonenumber"
@@ -163,9 +166,9 @@ const page = () => {
               />
             </div>
             <div className="mb-4">
-              <label htmlFor="email" className="block mb-2">
+              <p htmlFor="email" className="block mb-2 text-lg text-gray-700">
                 Email
-              </label>
+              </p>
               <input
                 type="email"
                 id="email"
@@ -174,9 +177,9 @@ const page = () => {
               />
             </div>
             <div className="mb-4">
-              <label htmlFor="address" className="block mb-2">
+              <p htmlFor="address" className="block mb-2 text-lg text-gray-700">
                 Địa chỉ công ty
-              </label>
+              </p>
               <input
                 type="address"
                 id="address"
@@ -185,9 +188,9 @@ const page = () => {
               />
             </div>
             <div className="mb-4">
-              <label htmlFor="message" className="block mb-2">
+              <p htmlFor="message" className="block mb-2 text-lg text-gray-700">
                 Lời nhắn
-              </label>
+              </p>
               <input
                 type="message"
                 id="message"
