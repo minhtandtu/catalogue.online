@@ -25,7 +25,7 @@ const navigation = [
       },
     ],
   },
-  { name: "Tìm mã", href: "#" },
+  { name: "Tìm mã", href: "/mau-melamin" },
 
   {
     name: "Liên hệ",
