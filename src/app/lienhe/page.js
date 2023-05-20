@@ -134,12 +134,15 @@ const page = () => {
           </div>
         </div>
         {/* FORM */}
-        <div className="mt-24 md:mt-36 px-4 ">
+        <div className="mt-4 md:mt-36 px-4 ">
           <form
             className="max-w-md"
             method="POST"
             action="https://formspree.io/f/mqkojdeg"
           >
+            <p className="text-gray-500">
+              * Quý Khách Vui Lòng Để Lại Thông Tin Để Nhận Catalogue
+            </p>
             <div className="mb-4 block">
               <p htmlFor="name" className="mb-2 text-lg text-gray-700">
                 Tên
@@ -148,7 +151,7 @@ const page = () => {
                 type="text"
                 id="name"
                 name="name"
-                className="border border-gray-300 p-2 w-full"
+                className="border border-gray-300 p-2 w-full text-gray-700 text-lg"
               />
             </div>
             <div className="mb-4">
@@ -162,7 +165,7 @@ const page = () => {
                 type="phonenumber"
                 id="phonenumber"
                 name="phonenumber"
-                className="border border-gray-300 p-2 w-full"
+                className="border border-gray-300 p-2 w-full text-gray-700 text-lg"
               />
             </div>
             <div className="mb-4">
@@ -173,7 +176,7 @@ const page = () => {
                 type="email"
                 id="email"
                 name="email"
-                className="border border-gray-300 p-2 w-full"
+                className="border border-gray-300 p-2 w-full text-gray-700 text-lg"
               />
             </div>
             <div className="mb-4">
@@ -184,7 +187,7 @@ const page = () => {
                 type="address"
                 id="address"
                 name="address"
-                className="border border-gray-300 p-2 w-full"
+                className="border border-gray-300 p-2 w-full text-gray-700 text-lg"
               />
             </div>
             <div className="mb-4">
@@ -195,7 +198,7 @@ const page = () => {
                 type="message"
                 id="message"
                 name="message"
-                className="border border-gray-300 p-2 w-full"
+                className="border border-gray-300 p-2 w-full text-gray-700 text-lg "
               />
             </div>
             <button
