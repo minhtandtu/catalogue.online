@@ -70,7 +70,7 @@ const Topmenu = () => {
                       <Link
                         href={itm.href}
                         download
-                        className="whitespace-nowrap"
+                        className="whitespace-nowrap text-gray-600"
                       >
                         {itm.name}
                       </Link>
