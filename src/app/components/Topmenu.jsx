@@ -60,17 +60,17 @@ const Topmenu = () => {
                   </div>
                 )}
               </div>
-              <div className="absolute left-8 md:left-10 top-10 opacity-0 group-hover:opacity-100 group-hover:bg-white/70 group-hover:rounded-md transition duration-500">
+              <div className="absolute left-8 md:left-10 top-10 opacity-0 group-hover:opacity-100 group-hover:bg-white/90 group-hover:rounded-md transition duration-500">
                 {item.submenu?.map((itm, idx) => {
                   return (
                     <div
                       key={idx}
-                      className="hover:bg-gray-300/50 p-4 cursor-pointer"
+                      className="hover:bg-gray-300/80 p-4 cursor-pointer"
                     >
                       <Link
                         href={itm.href}
                         download
-                        className="whitespace-nowrap text-gray-600"
+                        className="whitespace-nowrap text-gray-600 font-semibold"
                       >
                         {itm.name}
                       </Link>
