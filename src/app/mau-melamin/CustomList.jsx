@@ -39,15 +39,10 @@ export const CustomList = ({ data, deleteItem, resortdata }) => {
           >
             <div className="flex w-full flex-row sm:flex-col ">
               <div className="w-1/2 space-y-4 pr-4 font-normal text-gray-500 sm:w-full">
+                <p className="border-b border-gray-300"></p>
                 <p className="border-b border-gray-300">
-                  STT:{"  "}
-                  <span className=" font-medium text-gray-800">{item.STT}</span>
-                </p>
-                <p className="border-b border-gray-300">
-                  Mã AC:{"  "}
-                  <span className=" font-medium text-gray-800">
-                    {item.MAAC}
-                  </span>
+                  Mã:{"  "}
+                  <span className=" font-medium text-gray-800">{item.MA}</span>
                 </p>
                 <p className="border-b border-gray-300">
                   Nhóm gỗ:{"  "}
@@ -57,15 +52,13 @@ export const CustomList = ({ data, deleteItem, resortdata }) => {
                 </p>
                 <p className="border-b border-gray-300">
                   Tên mẫu:{"  "}
-                  <span className=" font-medium text-gray-800">
-                    {item.GHICHU}
-                  </span>
+                  <span className=" font-medium text-gray-800">{item.TEN}</span>
                 </p>
               </div>
               <div className="w-1/2 space-y-4 pr-4 pb-4 font-medium text-gray-500 sm:w-full sm:pt-4">
                 <p className="border-b border-gray-300">Thông tin:{"  "}</p>
                 <p className=" border-b border-gray-300 font-medium text-gray-800">
-                  {item.THONGTIN}
+                  {item.STATUS}
                 </p>
                 <div
                   onClick={() => handleOnclickDelete(item.STT)}

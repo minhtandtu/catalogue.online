@@ -25,9 +25,9 @@ export const SearchMaMelamin = ({ data, addItemToPage }) => {
 
     const result = data.filter(
       (item) =>
-        item.MAAC.includes(inputValue.toUpperCase()) ||
+        item.MA.includes(inputValue.toUpperCase()) ||
         item.NHOMGO.includes(inputValue.toUpperCase()) ||
-        item.GHICHU.includes(inputValue.toUpperCase())
+        item.TEN.includes(inputValue.toUpperCase())
     );
 
     if (result && inputValue) {
@@ -39,7 +39,7 @@ export const SearchMaMelamin = ({ data, addItemToPage }) => {
     <div className="mt-4 md:mt-8">
       <form onSubmit={handleSubmit}>
         <p className="block text-sm font-medium leading-6 text-gray-900">
-          Nhập mã AC cần tìm:
+          Nhập mã cần tìm:
         </p>
         <div className="relative mt-2 flex items-center">
           <input

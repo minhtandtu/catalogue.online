@@ -45,8 +45,8 @@ const Topmenu = () => {
 
         <div className="flex relative">
           {navigation.map((item, index) => (
-            <div key={index} className="group">
-              <div className="flex px-3 md:px-8 py-2 hover:bg-gray-200/50 ">
+            <div key={index} className="bd">
+              <div className="flex px-3 md:px-8 py-2 hover:bg-gray-500 bdd">
                 <Link
                   key={item.name}
                   href={item.href}
@@ -60,7 +60,7 @@ const Topmenu = () => {
                   </div>
                 )}
               </div>
-              <div className="absolute left-8 md:left-10 top-10 opacity-0 group-hover:opacity-100 group-hover:bg-white/90 group-hover:rounded-md transition duration-500">
+              <div className="absolute left-8 md:left-10 top-10 ">
                 {item.submenu?.map((itm, idx) => {
                   return (
                     <div

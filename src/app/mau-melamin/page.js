@@ -82,13 +82,13 @@ const tabs = [
     current: false,
   },
   {
-    name: "FABRIC",
+    name: "VÂN VẢI",
     href: "#",
     icon: BuildingOfficeIcon,
     current: false,
   },
   {
-    name: "CONCRETE",
+    name: "ĐÁ, BÊ TÔNG, XI MĂNG",
     href: "#",
     icon: BuildingOfficeIcon,
     current: false,
@@ -204,7 +204,7 @@ const page = () => {
                     </div>
                     <div className={`${tabNo == 3 ? "block" : "hidden"} py-4`}>
                       <ListMelamine
-                        data={HandleKeyword("SOLID")}
+                        data={HandleKeyword("ĐƠN SẮC")}
                         listofitems={Handlelist}
                       />
                     </div>
@@ -252,13 +252,13 @@ const page = () => {
                     </div>{" "}
                     <div className={`${tabNo == 11 ? "block" : "hidden"} py-4`}>
                       <ListMelamine
-                        data={HandleKeyword("FABRIC")}
+                        data={HandleKeyword("VÂN VẢI")}
                         listofitems={Handlelist}
                       />
                     </div>{" "}
                     <div className={`${tabNo == 12 ? "block" : "hidden"} py-4`}>
                       <ListMelamine
-                        data={HandleKeyword("CONCRETE")}
+                        data={HandleKeyword("ĐÁ, BÊ TÔNG, XI MĂNG")}
                         listofitems={Handlelist}
                       />
                     </div>{" "}
