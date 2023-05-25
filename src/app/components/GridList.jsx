@@ -24,7 +24,7 @@ const GridList = ({ category, data }) => {
                     item.STATUS == "MTS" ? "text-lime-600" : "text-red-400"
                   } text-sm italic`}
                 >
-                  {item.STATUS}
+                  {item.STATUS == "MTS" ? "MTS (1-2 ngày)" : "MTO (5-7 ngày)"}
                 </p>
               </div>
             </div>

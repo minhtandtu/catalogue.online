@@ -57,8 +57,12 @@ export const CustomList = ({ data, deleteItem, resortdata }) => {
               </div>
               <div className="w-1/2 space-y-4 pr-4 pb-4 font-medium text-gray-500 sm:w-full sm:pt-4">
                 <p className="border-b border-gray-300">Thông tin:{"  "}</p>
-                <p className=" border-b border-gray-300 font-medium text-gray-800">
-                  {item.STATUS}
+                <p
+                  className={` ${
+                    item.STATUS == "MTS" ? "text-lime-600" : "text-red-400"
+                  } text-sm italic`}
+                >
+                  {item.STATUS == "MTS" ? "MTS (1-2 ngày)" : "MTO (5-7 ngày)"}
                 </p>
                 <div
                   onClick={() => handleOnclickDelete(item.STT)}
